@@ -3,4 +3,6 @@ Today I learned!!
 
 
 *Hello*
-Here you go 
+
+- using ssh to clone the file @ xcode
+
