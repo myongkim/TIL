@@ -1,0 +1,97 @@
+#Learning about git
+
+
+Pull - only grab the thing that has been modified. 
+
+
+##Git command - 
+Making a file - git branch “fileName”
+Checking it out - git checkout “fileName”
+Branching out
+
+When we pushing the information
+Git add . - it will add the file to the stage
+Git commit - it will commit to the file ; it will direct to the vim window so that we can write a message regards to what message that is
+
+“:” to go down the file 
+Wq - w is write, q is quit so it will write and quit means go back to original file. 
+Git push origin master - it will push the data to the remote location. 
+
+
+Git merge bugFix
+Git checkout bugFix; git merge master
+Git rebase master - it start from a bugFix instead of Master
+
+
+
+
+
+
+
+Terminal
+
+https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/
+
+Terminal common command
+
+Cd - changes the directory of the command line path
+Ls - lists the contents of a directory
+Open - opens a file ; example: open “filename” ; open ./Desktop/wanderlust.pdf
+Cp - copy a file to another directory : example; cp “filename” “newfilename”
+Cp ./Desktop/wanderlust.pdf wanderlust2.pdf
+Mv - move a file 
+Mkdir (make directory)
+Rmdir (remove directory)
+Pwd - show where you are 
+Touch (make file)
+Cp (copy)
+Mv (move)
+Rm (remove)
+Ls -a (shows hidden file)
+Vi - editor start
+Cat - file output
+Head / tail - show file on top, show file on bottom
+Man - manual
+History - show what i type before
+; - mutiple command
+Open - open the file with the Finder
+Chmod - file change modified
+Clear - clear the brower
+Exit - exit
+
+
+
+
+Vi - Visual Editor 1976. 
+Open source editor 
+Now we use vim (vi improved, 1991)
+Now when we type vi, it operates on vim
+
+Vi has a three stage 
+Normal
+Input - need to put i,o,a to make it work
+Command - press “:” to operate
+
+Move around command - 
+H - left j; up , k; down, l;left
+X is the deleting command
+Dw is the deleting words
+d$ ; deletes the line after
+D2w - delete two words
+2dd - delete two lines 
+1dd - delete one line
+To quit
+At the normal state which need to press “esc”
+“:q” to quit , “:w” to write , “:wq” - write and quit
+
+Move the words or cursor
+2w - moves two words first character
+3e - third words to the last character
+
+Undo 
+Press “x” is deleting
+Press “u” is undo whatever happen
+CTRL - R will do undo the undo
+Capital U to return the line to its original state.
+
+
