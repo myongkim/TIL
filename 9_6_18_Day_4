@@ -4,7 +4,8 @@
 Pull - only grab the thing that has been modified. 
 
 
-##Git command - 
+## Git command - 
+
 Making a file - git branch “fileName”
 Checking it out - git checkout “fileName”
 Branching out
@@ -28,7 +29,7 @@ Git rebase master - it start from a bugFix instead of Master
 
 
 
-Terminal
+## Terminal
 
 https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/
 
