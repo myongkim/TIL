@@ -1,0 +1,126 @@
+
+import UIKit
+
+var str = "Hello, playground"
+
+//[ Practice ]
+
+
+
+
+
+//
+
+
+//이름을 입력 값으로 받아서 출력하는 함수
+var name = "Isaac"
+
+func names(firstName : String) -> String {
+    return firstName
+}
+
+names(firstName: "Isaac")
+
+
+//나이를 입력 값으로 받아서 출력하는 함수
+
+func age(currentAge : Int) -> Int {
+    
+    return currentAge
+}
+
+age(currentAge: 21)
+print(age)
+
+
+//이름과 나이를 입력 받아 자신을 소개하는 글을 출력하는 함수
+func selfIntro(secondName: String, tomorrowAge: Int) -> String {
+    //     print("My Name is \(secondName). My Current age is \(tomorrowAge).")
+    return "My Name is \(secondName). My Current age is \(tomorrowAge)."
+}
+selfIntro(secondName: "Peter", tomorrowAge: 22 )
+
+//정수를 하나 입력받아 2의 배수 여부를 반환하는 함수
+func remainderOfTwo(_ remainder: Int) -> Bool{
+    if remainder % 2 == 0 {
+        return true
+    }
+    else {
+        return false
+    }
+    
+}
+remainderOfTwo(4)
+
+//func
+
+//정수를 두 개 입력받아 곱한 결과를 반환하는 함수 (파라미터 하나의 기본 값은 10)
+var a = 0
+var b = 0
+
+func add(_ firstNumber: Int ,_ secondNumber: Int = 10) -> Int {
+    return firstNumber * secondNumber
+    
+}
+
+//add(firstNumber: 4, secondNumber: 5)
+add(3,8)
+add(5)
+
+//4과목의 시험 점수를 입력 받아 평균 값을 반환해주는 함수
+func averageScore(_ scoreOne: Int ,_ scoreTwo: Int,_ scoreThree: Int,_ scoreFour: Int) -> Int {
+    
+    return (scoreOne + scoreTwo + scoreThree + scoreFour)/4
+    
+    // how can i make a count of one two three four
+}
+var num = averageScore(30,50,80,90)
+
+print(num)
+//점수( 문자 또는 숫자 ) 를 입력받아 학점( A. B. C... )를 반환하는 함수 만들기 ( 90점이상 A, 80점이상 B, 70점이상 C, 그 이하 F )
+
+func gradeScore(score: Int) {
+    switch score {
+    case 90...100:
+        print("You got an A")
+    case 80..<90:
+        print("You got a B")
+    case 70..<80:
+        print("You got a C")
+    case 60..<70:
+        print("You got a D")
+    case 0..<60:
+        print("You got a F")
+    default:
+        print("No grade has given")
+        <#code#>
+    }
+}
+var num2 = gradeScore(score: 65)
+
+num2
+//점수( 문자 또는 숫자 )를 여러개 입력받아 평균에 대한 학점을 반환하는 함수 만들기  ( 90점이상 A, 80점이상 B, 70점이상 C, 그 이하 F )
+
+
+func averageGradeScore(subject1: Int, subject2: Int, subject3: Int) -> String{
+    let avgScore = (subject1 + subject2 + subject3)/3
+    
+    print(avgScore)
+    switch avgScore {
+    case 90...100:
+        return ("You got an A")
+    case 80..<90:
+        return ("You got a B")
+    case 70..<80:
+        return ("You got a C")
+    case 60..<70:
+        return ("You got a D")
+    case 0..<60:
+        return ("You got a F")
+    default:
+        return ("No grade has given")
+        <#code#>
+    }
+    
+}
+averageGradeScore(subject1: 80, subject2: 70, subject3: 92)
